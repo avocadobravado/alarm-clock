@@ -1,13 +1,69 @@
-$gray : #d3d3d3;
-$green : #75B975;
+$pinky: #f6b4b4;
+$gray: #444;
+$white: whitesmoke;
+
 
 body {
-  background: tomato;
-  border: 3px solid black;
+  background: $pinky;
   padding: 40px 80px;
+  color: $gray;
+};
+
+h1, h3 {
+  color: darken($pinky, 5%);
+  text-shadow: 1px 1px 1px lighten($gray, 45%);
+};
+
+.row {
+  display: flex;
+  flex-direction: column;
+};
+
+.wrapper {
+  text-align: center;
+  background: $white;
+  box-shadow: 2px 2px 10px darken($pinky, 8%);
+  border-radius: 10px;
+  padding: 30px;
+  img {
+    margin: 0 auto;
+  }
 };
 
 .btn {
-  background-color: tomato;
-  font-size: 30px;
-}
+  background-color: $white;
+  border: 3px solid $pinky;
+  color: $pinky;
+  padding: 40px;
+  line-height: 0;
+  font-size: 50px;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  &:hover, &:active, &:focus {
+    background-color: $pinky;
+    color: $white;
+  }
+};
+
+input[type=time]:not(.browser-default) {
+  height: 100px;
+  font-size: 100px;
+  color: $gray;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  border-bottom: 2px solid $gray;
+  &:active, &:focus {
+    border-bottom: 1px solid rebeccapurple;
+  }
+};
+
+input[type=time]:active, input[type=time]:focus {
+  color: $pinky;
+  border-bottom-color: $gray;
+};
+
+input:not([type]):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),         {
+  border-bottom: 2px solid $pinky;
+  box-shadow: none;
+};

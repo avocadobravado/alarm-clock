@@ -16,6 +16,8 @@ $(document).ready(function(){
       console.log(newAlarm.alarmClock(userInput));
       if (newAlarm.alarmClock(userInput) === true) {
         $(".output").html("<h1>" + "起きて!" + "</h2>");
+        var audio = new Audio('sound/bb-cry.mp3');
+        audio.play();
         clearInterval(alarmCountdown);
       }
     }
