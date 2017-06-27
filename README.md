@@ -6,12 +6,10 @@
 
 ## Description
 
-This app is an alarm clock that allows:
+This website is a Japanese alarm clock that allows:
 
-* As a user of your alarm clock, I would like to be able to view the current time.
-* I would also like to be able to enter a time into a form to set an alarm.
-* The alarm should turn on at the specified alarm time.
-* As a user, when the alarm turns on I want it to either show me something on the screen
+* A user to input the time they want to set the alarm
+* Once the inputted time has passed, a notice will display on the page that says "Wake up!"(起きて!) and play a goat bleating sound
 
 ## Setup/Installation Requirements
 
@@ -25,14 +23,19 @@ This app is an alarm clock that allows:
 
 ## Screenshot of Website
 
-![screenshot of project](https://github.com/avocadobravado/repo/blob/master/img/scs.png?raw=true)
+![screenshot of project](https://github.com/avocadobravado/alarm-clock/blob/master/img/scs.png?raw=true)
 
 ## How to Use
 
 * Open index.html in a web browser such as Google Chrome after following the set up instructions provided above.
 * Enter a time you'd like your alarm to go off
+* Click the button
+* Wait for the alarm to go off
+* Make sure the sound is on
 
 ## Known Bugs
+
+* Unknown, but let us know
 
 ## Support and contact details
 
@@ -43,7 +46,9 @@ This app is an alarm clock that allows:
 **Languages and Technologies used:**
 
 * HTML
+* Sass
 * CSS
+* Materialize
 * JavaScript
 * jQuery
 * Node
