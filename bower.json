@@ -1,0 +1,28 @@
+{
+  "name": "alarm-clock",
+  "description": "A kawaii alarm clock",
+  "main": "gulpfile.js",
+  "authors": [
+    "Karina Roush and Rose Sponseller ^_^"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "alarm",
+    "clock",
+    "kawaii",
+    "goat"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "materialize": "^0.99.0",
+    "moment": "^2.18.1"
+  }
+}
