@@ -51,6 +51,7 @@ This website is a Japanese alarm clock that allows:
 * Materialize
 * JavaScript
 * jQuery
+* Moment.js
 * Node
 * npm
 * Bower
