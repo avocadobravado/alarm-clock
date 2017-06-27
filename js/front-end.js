@@ -3,20 +3,24 @@ var Alarm = require('./../js/back-end').alarmModule;
 $(document).ready(function(){
 
   //Display time
-  $('#time').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+  $('#time').text(moment().format("dddd, MMMM, YYYY, h:mm:ss a"));
 
   //Submit function
   $(".baby-goats-alarm").submit(function(event){
     event.preventDefault();
+    var newAlarm = new Alarm();
+    var userInput = $('.alarm-time').val();
+    var alarmCountdown = setInterval(alarmTimer, 1000);
 
-    // var userInput = parseInt($('.alarm-time').val());
-      var userInput = parseInt($('.alarm-time').val());
+    function alarmTimer() {
+      console.log(newAlarm.alarmClock(userInput));
+      if (newAlarm.alarmClock(userInput) === true) {
+        $(".output").html("<h1>" + "起きて!" + "</h2>");
+        clearInterval(alarmCountdown);
+      }
+    }
 
-      console.log(userInput);
-
-      $('.output').html("<h2>" + userInput + "</h2>")
-    // var newAlarm = new Alarm(time);
-
+    $('.output').html("<h2>" + userInput + "</h2>");
   });
 });
 
